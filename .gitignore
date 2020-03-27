@@ -1,0 +1,7 @@
+/__pycache__
+/data
+/sub
+/utils
+/model
+*.ipynb
+*.txt
