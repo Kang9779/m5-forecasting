@@ -63,7 +63,7 @@ weight1, weight2 = weight_calc(df_train,product)
 
 def wrmsse(preds, data):
     # actual obserbed values
-    y_true = data.get_label()
+    y_true = data.get_label().values
     # number of columns
     num_col = len(y_true)//NUM_ITEMS
     
@@ -84,7 +84,7 @@ def wrmsse(preds, data):
 
 def wrmsse_simple(preds, data):
     # actual obserbed values
-    y_true = data.get_label()
+    y_true = data.get_label().values
     # number of columns
     num_col = len(y_true)//NUM_ITEMS
     # reshape data to original array((NUM_ITEMS*num_col,1)->(NUM_ITEMS, num_col) ) 
@@ -104,7 +104,7 @@ def wrmsse_simple(preds, data):
 
 
 if __name__ == '__main__':
-    
+
     pass
 
 
